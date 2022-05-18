@@ -2,11 +2,10 @@ package ru.netology.sqr;
 
 public class SquaresService {
 
-    public int sqrtCount(int lowerLimit, int upperLimit) {
+    public int sqrtCount(int lowerRangeLimit, int upperRangeLimit) {
         int count = 0;
-        for (int i = 4; i <= upperLimit; i++) {
-            if (i * i >= lowerLimit)
-                if (i * i <= upperLimit) {
+        for (int i = 10; i <= 99; i++) {
+            if (i*i >= lowerRangeLimit && i*i <= upperRangeLimit) {
                     count++;
                 }
         }
